@@ -1,0 +1,437 @@
+──(.venv)─(kali㉿kali)-[~/MCR]
+└─$ # Kill the running server
+pkill -f uvicorn
+
+# Wait a moment
+sleep 2
+
+# Start the server again
+uvicorn app:create_app --factory --host 0.0.0.0 --port 5000 --reload
+INFO:     Will watch for changes in these directories: ['/home/kali/MCR']
+INFO:     Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+INFO:     Started reloader process [63051] using StatReload
+INFO:     Started server process [63053]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50840 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56228 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56242 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56250 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59660 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53422 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53428 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41212 - "POST /api/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41224 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:41230 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41232 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41236 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:41240 - "POST /api/llm HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'chatClient.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [63053]
+INFO:     Started server process [87834]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:38150 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38160 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38168 - "POST /api/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38170 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:38176 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47766 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47770 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47772 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47776 - "POST /api/command HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47780 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:47790 - "POST /api/llm HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'chatClient.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [87834]
+INFO:     Started server process [93827]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'chatClient.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [93827]
+INFO:     Started server process [97785]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:44584 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44600 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44610 - "POST /api/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44626 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:44630 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44642 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44646 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44652 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44668 - "POST /api/command HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44672 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:44682 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49736 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49740 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44318 - "POST /api/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44332 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:44340 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44350 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44358 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44362 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44370 - "POST /api/command HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44382 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:44390 - "POST /api/llm HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'chatClient.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [97785]
+INFO:     Started server process [100340]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:53600 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53616 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56822 - "POST /api/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56830 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:56846 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56858 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56860 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56876 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56880 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56896 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56898 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56912 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56922 - "POST /api/command HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56934 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:56948 - "POST /api/llm HTTP/1.1" 500 Internal Server Error
+WARNING:  StatReload detected changes in 'chatClient.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [100340]
+INFO:     Started server process [103488]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:34836 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34842 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59702 - "POST /api/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59714 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41176 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41184 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41188 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41196 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41212 - "POST /api/llm HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'chatClient.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [103488]
+INFO:     Started server process [104529]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50760 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50768 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59088 - "POST /api/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59096 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:59112 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59118 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59124 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59130 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59140 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59156 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59172 - "POST /api/command HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59182 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:59194 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59206 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59210 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59224 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59232 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59248 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59264 - "POST /api/command HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55180 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:55196 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55198 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55202 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:55214 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55228 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55240 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:55254 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55268 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55278 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:55292 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55300 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55304 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:55310 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46620 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46622 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:46634 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46636 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46646 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:46662 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46674 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46688 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:46704 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46716 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46730 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:46746 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59380 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59390 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:59398 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59408 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59410 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:59424 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59426 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59430 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:59434 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35506 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35516 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:35520 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35536 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35550 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:35564 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35566 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35570 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:35586 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35600 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35608 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:35618 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57092 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57102 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:57104 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57120 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57134 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:57150 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57162 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57174 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:57184 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57194 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57200 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:57216 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35140 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35146 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:35156 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35166 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35174 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:35190 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35192 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35208 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:35218 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35228 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35230 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:35242 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46856 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46870 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:46886 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46888 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46904 - "POST /api/llm HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:46920 - "POST /api/llm HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'chatClient.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [104529]
+INFO:     Started server process [106977]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:60760 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60764 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44706 - "POST /api/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44718 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44722 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44732 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44742 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44746 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44752 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44766 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44776 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44788 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44796 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44812 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44816 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44822 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44828 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44838 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44844 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44856 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44868 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44876 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44886 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44896 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55476 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55484 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55486 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55492 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55494 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55500 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55504 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55510 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55516 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55528 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55530 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55538 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55552 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55560 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55574 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55588 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55600 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55612 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55624 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55632 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55640 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55642 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55656 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55670 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55672 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55686 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55690 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55700 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55710 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55718 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55722 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55726 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55734 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55738 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55742 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55754 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55766 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55780 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55784 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45358 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45374 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45382 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45388 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45398 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45406 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45418 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45424 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41256 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41266 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41274 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41290 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41302 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41318 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41322 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41336 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41342 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41358 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41362 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41372 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41376 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41384 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41400 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41404 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33726 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33732 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33748 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33760 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33776 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33790 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33798 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33808 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33820 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33826 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33838 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33848 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33858 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33866 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33878 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33880 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33892 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33896 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33904 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33914 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33930 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33942 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33944 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33950 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59794 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59804 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59810 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59824 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59830 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59846 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59850 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59860 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59864 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59880 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59890 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59894 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59904 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59914 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59930 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59946 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59960 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59970 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59978 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59994 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59998 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60004 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60016 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60022 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37752 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37768 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37770 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37784 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37788 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37802 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37814 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37816 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37818 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37820 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37828 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37842 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37854 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37868 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37882 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37896 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37898 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37914 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37920 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37922 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37936 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37944 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37954 - "POST /api/exec HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37962 - "POST /api/llm HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'chatClient.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [106977]
+INFO:     Started server process [110565]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:43816 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43826 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51316 - "POST /api/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51324 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51766 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51780 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51792 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51800 - "POST /api/command HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51802 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37420 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37428 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37434 - "POST /api/command HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40066 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40068 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40078 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40080 - "POST /api/command HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40176 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40184 - "GET /api/tools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40188 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51132 - "POST /api/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51140 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51152 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51168 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51172 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51182 - "POST /api/command HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51192 - "POST /api/llm HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:54580 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54586 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54600 - "POST /api/command HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46062 - "POST /api/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46074 - "POST /api/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46076 - "GET /api/tools/nmap/presets HTTP/1.1" 200 OK
+
